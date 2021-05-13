@@ -6,7 +6,6 @@
   *
   * Return: A pointer to the corresponding function
   */
-
 void (*get_op_func(char *s))(stack_t **head, unsigned int line_number)
 {
 	int i = 0;
@@ -20,7 +19,6 @@ void (*get_op_func(char *s))(stack_t **head, unsigned int line_number)
 				{"nop", nop},
 				{"sub", sub}
 	};
-
 	while (i < 8)
 	{
 		if (strcmp(opcodes[i].opcode, s) == 0)
@@ -29,6 +27,5 @@ void (*get_op_func(char *s))(stack_t **head, unsigned int line_number)
 		}
 		i++;
 	}
-
 	return (NULL);
 }
