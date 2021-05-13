@@ -2,7 +2,7 @@
 
 /**
   * nop - Opcode that does nothing
-  * @stack: The adress of the stack
+  * @stack: The address of the stack
   * @line_number: The line number of opcode currently being executed
   */
 
