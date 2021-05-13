@@ -1,8 +1,8 @@
 #include "monty.h"
 
 /**
-  * pall - Function that prints all the values of the stack
-  * @stack: The adress of the stack to print
+  * pall - Function that prints out all the values of the stack
+  * @stack: The address of the stack to print
   * @line_number: The line number of the opcode being executed
   */
 
@@ -18,8 +18,4 @@ void pall(stack_t **stack, unsigned int line_number)
 		counter++;
 		temp = temp->next;
 	}
-
-
-
 }
-
