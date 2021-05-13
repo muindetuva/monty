@@ -39,3 +39,18 @@ $
 pall This is the end of our program. Monty is awesome!$
 
 ```
+
+# Usage
+
+All the files are compiled in the following form:
+
+```
+ gcc -Wall -Werror -Wextra -pedantic *.c -o monty.
+
+```
+
+To Run the program:
+
+```
+ ./monty bytecode_file
+```
