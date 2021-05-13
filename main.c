@@ -3,7 +3,7 @@
   * main - The monty script interpreter
   * @argc: Argument count
   * @argv: Arguments array
-  * Return: 0 when succesful
+  * Return: 0 on success
   */
 int main(int argc, char *argv[])
 {
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "USAGE: monty file\n"), exit(EXIT_FAILURE);
 	/* Open the file */
 	fp = fopen(argv[1], "r");
-	/* Confirm the file has opened succesfully */
+	/* Confirm the file has opened successfully */
 	if (fp == NULL)
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]), exit(EXIT_FAILURE);
 	/* Read the file one line at a time */
