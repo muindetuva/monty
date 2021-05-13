@@ -17,9 +17,10 @@ void (*get_op_func(char *s))(stack_t **head, unsigned int line_number)
 				{"add", add},
 				{"swap", swap},
 				{"nop", nop},
-				{"sub", sub}
+				{"sub", sub},
+				{"div", div_}
 	};
-	while (i < 8)
+	while (i < 9)
 	{
 		if (strcmp(opcodes[i].opcode, s) == 0)
 		{
