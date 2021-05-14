@@ -16,7 +16,12 @@ if (temp == NULL || temp->next == NULL)
 fprintf(stderr, "L%d: can't mod, stack too short\n", line_number);
 exit(EXIT_FAILURE);
 }
-modulus = (temp->n) % (temp->next->n);
+if (temp->n == 0)
+{
+fprintf(stderr, "L%d: division by zero\n", line_number);
+exit(EXIT_FAILURE);
+}
+modulus = (temp->next->n) % (temp->n);
 pop(stack, line_number);
 (*stack)->n = modulus;
 }
